@@ -1,5 +1,11 @@
 package EPGHandlers
 
+/**
+This GO file is used for Unit test cases .
+It used the existing Go package : "testing"
+
+ */
+
 import (
 	"testing"
 	"encoding/json"
