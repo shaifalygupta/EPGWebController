@@ -1,0 +1,5 @@
+ID,Name,Type,SubType,Duration,SourceSystem,Country,Channel
+120011, Test Series,Program,Series,1800,P11,AUS,MTV
+120012, Test Season,Program,Season,1800,P22,AUS,Discovery
+120013, Test Series,Program,Episode,1800,P33,USA,MTV
+120014, Test Series,Program,Episode,1800,P44,USA,Discovery
