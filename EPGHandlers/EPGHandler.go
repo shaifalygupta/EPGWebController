@@ -1,5 +1,10 @@
 package EPGHandlers
 
+/***
+This Go file  is used to provide the handler functions to process the API request .
+This GO file also prepare json response based on EPGData returned from Backend i.e. Mock , CSV or other implementation.
+ */
+
 import (
 	"net/http"
 	"github.com/gorilla/mux"
