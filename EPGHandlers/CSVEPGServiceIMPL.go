@@ -1,5 +1,10 @@
 package EPGHandlers
 
+/***
+This Go file is the concrete implementation of EPGInteface functions
+This implementation is used to read data from csv file.
+ */
+
 import (
 	"os"
 	"encoding/csv"
@@ -9,6 +14,7 @@ import (
 	"path"
 )
 
+// Fetch all the data for EPG
 func (c csvReceiver) fetchAllData()  EPGDataList{
 
 	_, filename, _, _ := runtime.Caller(1)
@@ -46,8 +52,7 @@ func (c csvReceiver) fetchAllData()  EPGDataList{
 	return EPList
 }
 
-
-
+// Fetch all the data for EPG based on country
 func (c csvReceiver) fetchEPGByCountry()  EPGDataList{
 
 	_, filename, _, _ := runtime.Caller(1)
@@ -87,7 +92,7 @@ func (c csvReceiver) fetchEPGByCountry()  EPGDataList{
 	return EPList
 }
 
-
+// Fetch all the data for EPG based on Channel & Channel
 func (c csvReceiver) fetchEPGBychannel()  EPGDataList{
 
 	_, filename, _, _ := runtime.Caller(1)
@@ -127,6 +132,7 @@ func (c csvReceiver) fetchEPGBychannel()  EPGDataList{
 	return EPList
 }
 
+// This is used to post the data
 func (m csvReceiver) CreateEPGData(data EPGData) EPGDataList{
 	EPList:=m.fetchAllData()
 	EPList = append(EPList, data)
