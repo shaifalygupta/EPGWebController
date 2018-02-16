@@ -1,5 +1,9 @@
 package EPGHandlers
 
+/***
+This Go file is the concrete implementation of EPGInteface functions
+This implementation is used to return mock data.
+ */
 
 func (m mockReceiver) fetchAllData()  EPGDataList{
 
