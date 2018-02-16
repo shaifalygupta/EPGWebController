@@ -22,6 +22,7 @@ func TestCSVfetchAllData(t *testing.T) {
 func TestCSVfetchEPGBychannel(t *testing.T) {
 	c := csvReceiver{"USA","MTV"}
 	EPGDList := c.fetchEPGBychannel()
+	//ShowCase of Fail case although we are getting data lengh as 1 which is correct
 	if len(EPGDList) != 2 {
 		t.Errorf("Expected EPG Data length 1, but got %v", len(EPGDList))
 	}
